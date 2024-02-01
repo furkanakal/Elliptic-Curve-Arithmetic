@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "Elliptic-Curve-Cryptography"
+name = "elliptic-curve-cryptography"
 version = "0.1.0"
