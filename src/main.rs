@@ -8,9 +8,11 @@ fn main() {
     let a = 1;
     let b = 1;
     let base_point = Point { x: 3, y: 10 }; // Base point on the curve
-    let n = 7; // A small number for scalar multiplication (for demonstration)
-
-    let public_key = scalar_multiplication(&base_point, n, a, b, p);
+    
+    let private_key = 7; // A small number for scalar multiplication (for demonstration)
+    let public_key = scalar_multiplication(&base_point, private_key, a, b, p);
+    
+    println!("Private Key: {}", private_key);
     println!("Public Key: ({}, {})", public_key.x, public_key.y);
 }
 
