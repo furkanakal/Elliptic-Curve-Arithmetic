@@ -31,7 +31,7 @@ fn double_point(point: &Point, a: i64, modulus: i64) -> Point {
     Point { x: (x3 + modulus) % modulus, y: (y3 + modulus) % modulus }
 }
 
-fn scalar_multiplication(point: &Point, scalar: i64, a: i64, b: i64, modulus: i64) -> Point {
+fn scalar_multiplication(point: &Point, scalar: i64, a: i64, _b: i64, modulus: i64) -> Point {
     let mut result = Point { x: 0, y: 0 }; // Identity element in additive group
     let temp_point = point.clone();
     for _ in 0..scalar {
