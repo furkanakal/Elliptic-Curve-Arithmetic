@@ -1,1 +1,1 @@
-# Elliptic-Curve-Cryptography
+# Elliptic-Curve-Arithmetic
